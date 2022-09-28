@@ -1,0 +1,144 @@
+/* General Styles */
+*{
+    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-image: url(/img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+}
+
+/* Desktop Version Style */
+
+.container{
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.content{
+    padding: 48px;
+}
+
+.title{
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 17px;
+}
+
+.subtitle{
+    color: #717FA6;
+    margin-bottom: 20px;
+}
+
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:hsl(225, 100%, 98%);
+    border-radius: 12px;
+}
+.left-box{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.change{
+    font-weight: 700;
+    font-size: 14px;
+    color: #382AE1;
+    transition: color 0.3s ease;
+}
+
+.change:hover{
+    text-decoration: none;
+    color: #766CF1;
+
+}
+
+.price{
+    margin-left: 20px;
+}
+
+.price h4{
+    font-weight: 900;
+    color: #1F2E55;
+}
+
+.price p{
+    color: #717FA6;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+.proceed{
+    background-color: #382AE1;
+    color: white;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    border-radius: 12px;
+    margin-top: 47px;
+    margin-bottom: 32px;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    transition: 0.3s ease;
+
+}
+
+.proceed:active{
+    transform: scale(0.98);
+}
+
+
+.proceed:hover{
+    background-color: #766CF1;
+}
+
+.cancel-order{
+    text-decoration: none;
+    color: #717FA6;
+    font-size: 15px;
+    font-weight: 900;
+    transition: 0.3s ease;
+}
+.cancel-order:hover{
+    color: #1F2E55;
+}
+
+
+/* Responsive */
+
+@media(max-width:375px){
+    body{
+        background-image: url(/img/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    .container{
+        max-width: 90%;
+    }
+    .box{
+        padding: 10px;
+    }
+    .title{
+        font-size: 24px;
+    }
+
+}
